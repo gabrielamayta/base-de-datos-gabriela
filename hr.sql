@@ -7,9 +7,8 @@ SELECT first_name, last_name,l.state_province, l.city FROM employees e
 JOIN departments d ON e.department_id = d.department_id
 JOIN locations l ON d.location_id = l.location_id
 
-Mostrar nombre de todos los empleados junto con el nombre de su jefe (manager), ordenados por el nombre del jefe
+Mostrar el nombre de todos los empleados junto con el nombre de su jefe (manager), ordenados por el nombre del jefe.
+SELECT e.first_name, m.first_name AS empleado FROM employees e JOIN employees m ON e.employee_id = m.manager_id
+ORDER BY m.first_name DESC
 
-
-
-
-Calcular cuantos empleados tiene a cargo cada jefe, ordenados de mayor a menor por cantidad de empleados a cargo.
+Mostrar el nombre y apellido de los empleados, junto al nombre de sus hijos, ordenados alfabéticamente.
