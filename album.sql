@@ -28,4 +28,4 @@ JOIN genres g on t.GenreId = g.GenreId
 8-Mostrar nombre y título de las canciones, ordenar el título de forma descendente.
 SELECT t.name, g.Title FROM tracks t 
 JOIN albums g on t.name = g.Title
-ORDER BY t.name,g.Title ASC
+ORDER BY t.name,g.Title DESC

@@ -1,4 +1,4 @@
 -- 2- Listar el nombre de la persona y los datos del auto
 -- (marca, modelo y patente) de todos los
 -- varones más de 70 años, elegir el orden
--- en que se muestran 
+-- en que se muestran
