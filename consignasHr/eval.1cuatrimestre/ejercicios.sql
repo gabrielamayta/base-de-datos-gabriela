@@ -22,13 +22,13 @@ WHERE c.country_name = ("United States of America")
 --Y que por favor le carguemos momentáneamente el numero de la empresa (111.222.3344) para evitar 
 --tener valores null en esos campos 
 
-3-SELECT e.employee_id, e.first_name, e.last_name, e.email, e.phone_number, e.department_id FROM employees
-JOIN departments d on e.department_id = d.department_id
-WHERE e.phone_number is NULL
-
-UPDATE employees
+3- UPDATE employees
 SET phone_number = ("111.222.33.44")
 WHERE phone_number is NULL
+
+SELECT e.employee_id, e.first_name, e.last_name, e.email, e.phone_number, e.department_id FROM employees
+JOIN departments d on e.department_id = d.department_id
+WHERE e.phone_number is NULL
 
 
 4--Debido a una politica de mejora de sueldos nos solicitan que incrementemos un 20% 
